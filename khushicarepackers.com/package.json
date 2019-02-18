@@ -1,0 +1,20 @@
+{
+  "name": "khushicarepackers.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "grunt": "grunt"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt-contrib-htmlmin": "^3.0.0",
+    "node-sass": "^4.11.0"
+  },
+  "dependencies": {
+    "grunt": "^1.0.3",
+    "save-dev": "^2.0.0"
+  }
+}

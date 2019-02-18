@@ -1,0 +1,221 @@
+@import "config";
+@import "about";
+* {
+  box-sizing: border-box;
+}
+
+//
+//
+//
+//
+body {
+  padding: 0;
+  margin: 0;
+  background-color: lighten(grey, 35);
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+//
+//
+/** Header */
+header {
+  background-color: $primary-color;
+  color: #fff;
+  border-bottom: $secondary-color 3px solid;
+  height: 40px;
+  .branding {
+    float: left;
+    h1 {
+      margin: 0;
+    }
+  }
+  nav {
+    float: right;
+    padding-top: 10px;
+    a {
+      color: #fff;
+      text-decoration: none;
+      //
+      text-transform: uppercase;
+      font-size: 15px;
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        display: inline;
+        padding: 0 20px;
+      }
+    }
+  }
+  .highlight,
+  .current a {
+    color: $secondary-color;
+    font-weight: bold;
+  }
+}
+/** Showcase */
+#showcase {
+  min-height: 550px;
+  background: $home-image no-repeat;
+  background-size: cover;
+  &:before {
+    content: "";
+    background: #000;
+    //
+
+    opacity: 0.8;
+    width: 100%;
+    height: 550px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+  }
+  .container {
+    opacity: 0.8;
+    text-align: center;
+    color: #fff;
+    h1 {
+      margin-top: 100px;
+      font-size: 55px;
+      margin-bottom: 50px;
+      font-weight: 600;
+
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 20px;
+      margin-bottom: 70px;
+    }
+    .btn-container {
+      height: 50px;
+      a {
+        background-color: $secondary-color;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 15px 50px;
+        margin-left: 50px;
+        color: #fff;
+        //
+        //
+        //
+        font-weight: bold;
+        border-radius: 5px;
+      }
+      .btn-call {
+        float: left;
+      }
+      .btn-visit {
+        float: right;
+      }
+    }
+  }
+}
+/** Boxes */
+.boxes {
+  background-color: #fff;
+  padding: 50px 0;
+  .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .box {
+      border: $secondary-color 2px solid;
+      text-align: center;
+      float: left;
+      width: 30%;
+      padding: 30px;
+      margin-right: 3%;
+      // box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+      // -moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+      // -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+      @include easeOut;
+      &:hover {
+        background-color: darken(#fff, 5);
+        z-index: 5;
+        box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+        border: 3px solid #ccc;
+        @include easeOut;
+      }
+      h1 {
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+/** Note */
+#note {
+  text-align: center;
+  h1 {
+    margin: 50px 10px;
+    padding: 50px 20px;
+    line-height: 1.5;
+    color: $secondary-color;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px 0px rgba(94, 95, 99, 0.24);
+  }
+}
+/** JD Rating */
+#jd-rating {
+  text-align: center;
+  background-color: #fff;
+  h1 {
+    font-size: 35px;
+  }
+  a {
+    text-decoration: none;
+    i:before {
+      color: $secondary-color;
+    }
+  }
+}
+
+/** Call Banner */
+.call-banner {
+  //
+  padding: 100px 0;
+  // height: 400px;
+  font-size: 25px;
+  background-color: #fff;
+  text-align: center;
+  h1 {
+    margin-bottom: 60px;
+  }
+  .call-btn {
+    border: $primary-color 3px solid;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 30px;
+    a {
+      text-decoration: none;
+      font-size: 50px;
+      span {
+        color: $primary-color;
+      }
+      :before {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+/** footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  // margin-top: 20px;
+  color: #fff;
+  background-color: $secondary-color;
+}
+@import "mobile";

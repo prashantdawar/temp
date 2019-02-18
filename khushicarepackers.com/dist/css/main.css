@@ -1,0 +1,330 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth; }
+
+h1,
+a {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.15rem; }
+
+/** Header */
+header {
+  background-image: url("../img/bg1.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  /** Menu */
+  /** Tagline */ }
+  header h1,
+  header a {
+    color: #fff; }
+  header .container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem 5rem;
+    height: 88vh; }
+    header .container .branding {
+      float: left; }
+  header .menu {
+    float: right; }
+    header .menu li {
+      list-style: none;
+      display: inline;
+      margin: 0 3rem; }
+      header .menu li.current a {
+        color: #dfb62d; }
+      header .menu li a:hover {
+        color: #dfb62d;
+        transition: all 0.5s ease-out; }
+  header .tagline {
+    padding: 40vh 0 0 0;
+    margin-left: auto;
+    width: 43%;
+    text-align: right; }
+    header .tagline .contact {
+      margin-top: 8vh; }
+      header .tagline .contact a {
+        background-color: #dfb62d;
+        padding: 1rem 5rem;
+        width: 30%;
+        margin: 0 3%;
+        border-radius: 5px; }
+  header .contact-links {
+    position: absolute;
+    bottom: 3rem; }
+    header .contact-links a:hover {
+      color: #dfb62d; }
+
+/** Work */
+.work {
+  text-align: center;
+  padding-top: 5rem; }
+  .work .container {
+    width: 80%;
+    margin: auto; }
+  .work-img {
+    float: left;
+    height: 300px;
+    width: 500px;
+    background-image: url("../img/packers.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .work-info {
+    width: 30%;
+    float: right;
+    text-align: right; }
+    .work-info h1 {
+      font-size: 2rem; }
+      .work-info h1 span {
+        color: #dfb62d; }
+    .work-info p {
+      text-align: right;
+      font-size: 1.6rem; }
+
+/** Service */
+.services {
+  text-align: center;
+  padding: 5rem 0;
+  display: block; }
+  .services .container {
+    padding-top: 10rem;
+    width: 80%;
+    margin: auto;
+    overflow: auto; }
+  .services-img {
+    float: right;
+    height: 300px;
+    width: 500px;
+    background-image: url("../img/movers.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .services-info {
+    width: 30%;
+    float: left;
+    text-align: left; }
+    .services-info h1 {
+      font-size: 2rem; }
+      .services-info h1 span {
+        color: #dfb62d; }
+    .services-info .services-description {
+      margin: 1em 0;
+      padding: 0;
+      font-size: 1.5rem;
+      list-style: none; }
+
+/** Mid Call */
+.mid-call {
+  background-color: #dfb62d;
+  padding: 3rem 0; }
+  .mid-call .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden; }
+    .mid-call .container .call-message {
+      float: left;
+      padding: 0.7rem 0; }
+    .mid-call .container .call-btn {
+      float: right; }
+      .mid-call .container .call-btn a {
+        padding: 0.7rem 5rem;
+        border: 3px solid #fff;
+        border-radius: 5px;
+        display: block;
+        color: #dfb62d;
+        background-color: #fff; }
+        .mid-call .container .call-btn a .mobile {
+          display: none; }
+    .mid-call .container h1 {
+      color: #fff; }
+
+/** Best Offer */
+.best-offer-boxes {
+  text-align: center; }
+  .best-offer-boxes .container {
+    width: 80%;
+    margin: auto;
+    padding: 5rem 0; }
+    .best-offer-boxes .container h1 {
+      margin: 2rem 0;
+      font-size: 2rem;
+      color: #dfb62d; }
+    .best-offer-boxes .container .box {
+      border: 3px solid #dfb62d;
+      width: 25%;
+      display: inline-block;
+      margin: 0 2%;
+      padding: 10px; }
+      .best-offer-boxes .container .box img {
+        width: 100%;
+        height: 15rem; }
+      .best-offer-boxes .container .box h2 {
+        text-transform: uppercase; }
+      .best-offer-boxes .container .box li {
+        text-align: left;
+        list-style: none;
+        text-transform: uppercase;
+        line-height: 1.5em;
+        letter-spacing: 0.15rem; }
+
+/*
+
+
+
+
+
+
+
+
+*/
+/** Brands */
+.brands {
+  background-color: #dfb62d;
+  padding: 5rem 0; }
+  .brands .container {
+    width: 80%;
+    margin: auto;
+    text-align: center; }
+    .brands .container .branding h1 {
+      color: #fff;
+      font-weight: 600;
+      font-size: 2rem;
+      margin: 2rem 0; }
+    .brands .container .box {
+      height: 8rem;
+      width: 16%;
+      margin: 0.5%;
+      display: inline-block; }
+      .brands .container .box img {
+        height: 100%;
+        width: 100%;
+        background-color: #fff; }
+
+/** Contact */
+.contact {
+  padding: 5rem 0;
+  text-align: center; }
+  .contact .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden; }
+    .contact .container h1 {
+      color: #dfb62d;
+      font-weight: 600;
+      font-size: 2rem; }
+    .contact .container .contact-header {
+      margin-bottom: 5rem; }
+    .contact .container .contact-map {
+      width: 100%; }
+      .contact .container .contact-map iframe {
+        height: 50vh;
+        width: 100%; }
+    .contact .container .contact-details {
+      margin: 5rem 0 2rem 0; }
+      .contact .container .contact-details .phone,
+      .contact .container .contact-details .email {
+        display: inline;
+        margin: 5%; }
+        .contact .container .contact-details .phone a,
+        .contact .container .contact-details .email a {
+          color: #fff;
+          background-color: #dfb62d;
+          padding: 2rem;
+          border-radius: 5rem;
+          text-transform: none; }
+          .contact .container .contact-details .phone a span:nth-child(2),
+          .contact .container .contact-details .email a span:nth-child(2) {
+            display: none; }
+
+/** Footer */
+footer {
+  background-color: #dfb62d;
+  text-align: center;
+  padding: 3rem 0; }
+  footer p {
+    margin: 0;
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600; }
+
+@media screen and (max-width: 500px) {
+  header {
+    background-attachment: scroll;
+    text-align: center; }
+    header .container {
+      padding: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 100vh; }
+      header .container .branding {
+        float: none;
+        padding: 2rem 0; }
+    header .menu {
+      display: none; }
+    header .tagline {
+      padding: 20vh 0 0 0;
+      width: 100%;
+      text-align: center; }
+    header .contact-links {
+      display: none; }
+  .work,
+  .services {
+    padding-top: 5rem; }
+    .work .container,
+    .services .container {
+      width: 100%; }
+    .work-info,
+    .services-info {
+      float: none;
+      width: 80%;
+      margin: auto; }
+      .work-info h1,
+      .services-info h1 {
+        width: 30%;
+        margin-left: 65%; }
+      .work-info p,
+      .services-info p {
+        text-align: left; }
+    .work-img,
+    .services-img {
+      float: none;
+      width: 100%;
+      height: 40vh; }
+  .best-offer-boxes .container .box {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2rem; }
+  .brands {
+    padding: 2rem 0; }
+    .brands .container {
+      width: 100%; }
+      .brands .container .branding {
+        width: 80%;
+        margin: auto; }
+      .brands .container .box {
+        width: 44%;
+        margin: 1%; }
+  .contact .container {
+    width: 100%; }
+    .contact .container .contact-details {
+      margin: 5rem 0; }
+      .contact .container .contact-details .phone,
+      .contact .container .contact-details .email {
+        display: block;
+        margin: 5rem 0 0 0; }
+        .contact .container .contact-details .phone a span:nth-child(1),
+        .contact .container .contact-details .email a span:nth-child(1) {
+          display: none; }
+        .contact .container .contact-details .phone a span:nth-child(2),
+        .contact .container .contact-details .email a span:nth-child(2) {
+          display: inline; }
+  footer span {
+    display: block; } }

@@ -1,0 +1,241 @@
+#about-banner {
+  min-height: 400px;
+  background: url("../img/about-banner.jpg") no-repeat 0 -150px;
+  background-size: cover; }
+
+#about-info {
+  padding: 50px 0;
+  text-align: center; }
+  #about-info .header {
+    margin: 50px 0; }
+    #about-info .header h1 {
+      text-transform: uppercase; }
+  #about-info .info {
+    background-color: rgba(0, 0, 0, 0.41); }
+    #about-info .info-img {
+      float: left;
+      width: 55%;
+      height: 350px; }
+      #about-info .info-img img {
+        height: 100%;
+        width: 100%;
+        filter: brightness(50%); }
+    #about-info .info-detail {
+      float: right;
+      color: #fff;
+      width: 40%;
+      text-align: left;
+      padding: 20px; }
+    #about-info .info:after {
+      content: "";
+      display: block;
+      height: 0;
+      clear: both; }
+
+/** Mid-call */
+.mid-call {
+  padding: 50px 0;
+  background-color: #0ad3cd;
+  color: #fff;
+  font-weight: bold; }
+  .mid-call h1 {
+    float: left;
+    text-transform: uppercase;
+    font-size: 25px; }
+  .mid-call a {
+    margin-top: 10px;
+    float: right;
+    background: #fff;
+    padding: 15px 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #444; }
+
+/** team */
+#team {
+  text-align: center;
+  padding: 50px 0 100px 0;
+  background-color: #fff; }
+  #team .header {
+    padding: 20px 0; }
+    #team .header h1 {
+      text-transform: uppercase; }
+  #team .t-box {
+    background: url("../img/background.jpg");
+    border: 1px solid black;
+    display: inline-block;
+    width: 20%;
+    margin: 0 1%;
+    height: 300px;
+    position: relative; }
+    #team .t-box .content {
+      background: rgba(0, 0, 0, 0.41);
+      color: #fff;
+      position: absolute;
+      width: 100%;
+      bottom: 0; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #d9d9d9; }
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden; }
+
+/** Header */
+header {
+  background-color: #444;
+  color: #fff;
+  border-bottom: #0ad3cd 3px solid;
+  height: 40px; }
+  header .branding {
+    float: left; }
+    header .branding h1 {
+      margin: 0; }
+  header nav {
+    float: right;
+    padding-top: 10px; }
+    header nav a {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 15px; }
+      header nav a:hover {
+        color: #0ad3cd; }
+    header nav ul {
+      margin: 0;
+      padding: 0; }
+      header nav ul li {
+        display: inline;
+        padding: 0 20px; }
+  header .highlight,
+  header .current a {
+    color: #0ad3cd;
+    font-weight: bold; }
+
+/** Showcase */
+#showcase {
+  min-height: 550px;
+  background: url("../img/background.jpg") no-repeat;
+  background-size: cover; }
+  #showcase:before {
+    content: "";
+    background: #000;
+    opacity: 0.8;
+    width: 100%;
+    height: 550px;
+    position: absolute;
+    top: 40px;
+    left: 0; }
+  #showcase .container {
+    opacity: 0.8;
+    text-align: center;
+    color: #fff; }
+    #showcase .container h1 {
+      margin-top: 100px;
+      font-size: 55px;
+      margin-bottom: 50px;
+      font-weight: 600;
+      color: #fff;
+      text-transform: uppercase; }
+    #showcase .container p {
+      font-size: 20px;
+      margin-bottom: 70px; }
+    #showcase .container .btn-container {
+      height: 50px; }
+      #showcase .container .btn-container a {
+        background-color: #0ad3cd;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 15px 50px;
+        margin-left: 50px;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 5px; }
+      #showcase .container .btn-container .btn-call {
+        float: left; }
+      #showcase .container .btn-container .btn-visit {
+        float: right; }
+
+/** Boxes */
+.boxes {
+  background-color: #fff;
+  padding: 50px 0; }
+  .boxes .container {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    .boxes .container .box {
+      border: #0ad3cd 2px solid;
+      text-align: center;
+      float: left;
+      width: 30%;
+      padding: 30px;
+      margin-right: 3%;
+      transition: all 0.5s ease-out; }
+      .boxes .container .box:hover {
+        background-color: #f2f2f2;
+        z-index: 5;
+        box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+        border: 3px solid #ccc;
+        transition: all 0.5s ease-out; }
+      .boxes .container .box h1 {
+        text-transform: uppercase; }
+
+/** Note */
+#note {
+  text-align: center; }
+  #note h1 {
+    margin: 50px 10px;
+    padding: 50px 20px;
+    line-height: 1.5;
+    color: #0ad3cd;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px 0px rgba(94, 95, 99, 0.24); }
+
+/** JD Rating */
+#jd-rating {
+  text-align: center;
+  background-color: #fff; }
+  #jd-rating h1 {
+    font-size: 35px; }
+  #jd-rating a {
+    text-decoration: none; }
+    #jd-rating a i:before {
+      color: #0ad3cd; }
+
+/** Call Banner */
+.call-banner {
+  padding: 100px 0;
+  font-size: 25px;
+  background-color: #fff;
+  text-align: center; }
+  .call-banner h1 {
+    margin-bottom: 60px; }
+  .call-banner .call-btn {
+    border: #444 3px solid;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 30px; }
+    .call-banner .call-btn a {
+      text-decoration: none;
+      font-size: 50px; }
+      .call-banner .call-btn a span {
+        color: #444; }
+      .call-banner .call-btn a :before {
+        color: #0ad3cd; }
+
+/** footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  background-color: #0ad3cd; }

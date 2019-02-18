@@ -1,0 +1,6 @@
+
+Sitemap: http://www.saugatcomputer.com/sitemap.xml
+User-agent: *
+Disallow: /js/
+Disallow: /img/
+Disallow: /css/

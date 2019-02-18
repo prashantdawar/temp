@@ -1,0 +1,6 @@
+
+Sitemap: http://www.khushicarepackers.com/sitemap.xml
+User-agent: *
+Disallow: /js/
+Disallow: /img/
+Disallow: /css/
