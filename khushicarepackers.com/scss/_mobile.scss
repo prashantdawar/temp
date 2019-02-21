@@ -22,6 +22,9 @@
       width: 100%;
       //
       text-align: center;
+      .contact{
+        margin-top:0;
+      }
     }
     .contact-links {
       display: none;
@@ -32,10 +35,11 @@
   //
   .work,
   .services {
-    padding-top: 5rem;
+    // 
+    padding-top: 8rem;
     .container {
       width: 100%;
-      //
+      padding-top:0;
     }
     &-info {
       float: none;

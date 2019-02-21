@@ -272,14 +272,17 @@ footer {
       padding: 20vh 0 0 0;
       width: 100%;
       text-align: center; }
+      header .tagline .contact {
+        margin-top: 0; }
     header .contact-links {
       display: none; }
   .work,
   .services {
-    padding-top: 5rem; }
+    padding-top: 8rem; }
     .work .container,
     .services .container {
-      width: 100%; }
+      width: 100%;
+      padding-top: 0; }
     .work-info,
     .services-info {
       float: none;
