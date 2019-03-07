@@ -1,0 +1,6 @@
+
+Sitemap: http://www.datapacks.in/sitemap.xml
+User-agent: *
+Disallow: /js/
+Disallow: /img/
+Disallow: /css/
